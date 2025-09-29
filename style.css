@@ -112,3 +112,44 @@ body{
     opacity: 1;
 }
 
+.way-container{
+    margin-top: 20px;
+}
+
+.way{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #FFF;
+    font-size: 18px;
+}
+
+.way input[type="checkbox"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #FFF;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 10px;
+    position: relative;
+    background-color: #333;
+}
+
+.way input[type="checkbox"]:checked{
+    background-color: #3EB72B;
+    border-color: #3EB72B;
+}
+
+.way input[type="checkbox"]:checked:before{
+    content: '✔';
+    color: #FFF;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
